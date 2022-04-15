@@ -7,6 +7,10 @@
 
 import Foundation
 
+enum DeviceType {
+    case bgm, pen, unknown
+}
+
 struct UserModel {
     
     let firstName: String
@@ -14,4 +18,5 @@ struct UserModel {
     let emailId: String
     let address: String
     let pinCode: String
+    var deviceType: DeviceType = .unknown
 }

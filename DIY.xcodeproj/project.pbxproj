@@ -56,15 +56,47 @@
 		CC50D515280936DF00863885 /* DIY */ = {
 			isa = PBXGroup;
 			children = (
+				CC50D52A280937A800863885 /* Application */,
+				CC50D52B280937B200863885 /* View Cotroller */,
+				CC50D52C280937BB00863885 /* Views */,
+				CC50D52D280937C200863885 /* Supporting Files */,
+			);
+			path = DIY;
+			sourceTree = "<group>";
+		};
+		CC50D52A280937A800863885 /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				CC50D516280936DF00863885 /* AppDelegate.swift */,
 				CC50D518280936DF00863885 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CC50D52B280937B200863885 /* View Cotroller */ = {
+			isa = PBXGroup;
+			children = (
 				CC50D51A280936DF00863885 /* ViewController.swift */,
+			);
+			path = "View Cotroller";
+			sourceTree = "<group>";
+		};
+		CC50D52C280937BB00863885 /* Views */ = {
+			isa = PBXGroup;
+			children = (
 				CC50D51C280936DF00863885 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CC50D52D280937C200863885 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				CC50D51F280936E100863885 /* Assets.xcassets */,
 				CC50D521280936E100863885 /* LaunchScreen.storyboard */,
 				CC50D524280936E100863885 /* Info.plist */,
 			);
-			path = DIY;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,7 +323,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7NQ2QT4C3B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DIY/Info.plist;
+				INFOPLIST_FILE = "DIY/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +351,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7NQ2QT4C3B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DIY/Info.plist;
+				INFOPLIST_FILE = "DIY/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

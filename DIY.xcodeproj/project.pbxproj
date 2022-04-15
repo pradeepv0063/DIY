@@ -13,6 +13,7 @@
 		CC50D51E280936DF00863885 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC50D51C280936DF00863885 /* Main.storyboard */; };
 		CC50D520280936E100863885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC50D51F280936E100863885 /* Assets.xcassets */; };
 		CC50D523280936E100863885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC50D521280936E100863885 /* LaunchScreen.storyboard */; };
+		CC50D53128093AAC00863885 /* NavButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D53028093AAC00863885 /* NavButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CC50D51F280936E100863885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC50D522280936E100863885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC50D524280936E100863885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC50D53028093AAC00863885 /* NavButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				CC50D51C280936DF00863885 /* Main.storyboard */,
+				CC50D53028093AAC00863885 /* NavButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				CC50D51B280936DF00863885 /* ViewController.swift in Sources */,
 				CC50D517280936DF00863885 /* AppDelegate.swift in Sources */,
 				CC50D519280936DF00863885 /* SceneDelegate.swift in Sources */,
+				CC50D53128093AAC00863885 /* NavButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

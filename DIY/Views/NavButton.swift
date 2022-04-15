@@ -46,7 +46,7 @@ class NavButton: UIButton {
             imageName = "arrow.right"
             placement = .trailing
         } else {
-            title = "Back 12"
+            title = "Back"
             imageName = "arrow.left"
             placement = .leading
         }

@@ -55,17 +55,3 @@ private extension UserDetailsViewController {
         return model
     }
 }
-
-extension UserDetailsViewController: UITextFieldDelegate {
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        
-        if let nextField = view.viewWithTag(textField.tag + 1) as? UITextField {
-            nextField.becomeFirstResponder()
-        } else {
-            textField.resignFirstResponder()
-        }
-        
-        return false
-    }
-}

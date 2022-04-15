@@ -9,6 +9,8 @@ import UIKit
 
 class SuccessViewController: BaseViewController {
 
+    var userModel: UserModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

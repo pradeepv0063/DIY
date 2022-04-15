@@ -7,8 +7,10 @@
 
 import Foundation
 
-enum DeviceType {
-    case bgm, pen, unknown
+enum DeviceType: String {
+    case bgm = "BGM Meter"
+    case pen = "BLE Pen"
+    case unknown = ""
 }
 
 struct UserModel {

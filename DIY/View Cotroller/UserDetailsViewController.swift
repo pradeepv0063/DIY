@@ -24,7 +24,8 @@ class UserDetailsViewController: BaseViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        setUserData()
+        let destination = segue.destination as? DevicesViewController ?? DevicesViewController()
+        destination.userModel = setUserData()
     }
 }
 
@@ -45,13 +46,13 @@ private extension UserDetailsViewController {
         return true
     }
     
-    func setUserData() {
+    func setUserData() -> UserModel {
         let model = UserModel(firstName: firstName.text!,
                               lastName: lastName.text!,
                               emailId: emailId.text!,
                               address: address.text!,
                               pinCode: pinCode.text!)
-        userModel = model
+        return model
     }
 }
 

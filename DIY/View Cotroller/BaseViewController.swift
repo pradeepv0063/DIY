@@ -9,8 +9,6 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
-    var userModel: UserModel?
-
     override func viewDidLoad() {
         super.viewDidLoad()
 

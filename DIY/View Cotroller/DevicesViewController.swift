@@ -11,6 +11,7 @@ class DevicesViewController: BaseViewController {
 
     @IBOutlet weak var penSwitch: UISwitch!
     @IBOutlet weak var bgmSwitch: UISwitch!
+    var userModel: UserModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +29,9 @@ class DevicesViewController: BaseViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as? BLEConfirmationViewController ?? BLEConfirmationViewController()
         setDevice()
+        destination.userModel = userModel
     }
     
     private func validateSelection() -> Bool {

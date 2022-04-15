@@ -19,10 +19,13 @@ extension String {
 
 extension UIViewController {
     
-    func showAlert(title: String = "", message: String = "") {
+    func showAlert(title: String = "", message: String = "", action: (() -> Void)? = nil) {
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let action = UIAlertAction(title: "Ok", style: .cancel)
+        let action = UIAlertAction(title: "Ok", style: .cancel) { _ in
+            guard let action = action else { return }
+            action()
+        }
         alert.addAction(action)
         present(alert, animated: true)
     }

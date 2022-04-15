@@ -22,4 +22,7 @@ struct UserModel {
     let pinCode: String
     var deviceType: DeviceType = .unknown
     var date: String = ""
+    var serialNo: String = "AXVBP89"
+    var deviceVersion: String = "2.4.5"
+    var deviceName: String = "Alpha"
 }

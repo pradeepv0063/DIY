@@ -36,10 +36,13 @@ private extension DataValidationViewController {
     
     func validate() -> Bool {
         
-        if serialNo.text == "AXVBP89", deviceVersion.text == "2.4.5", deviceName.text == "Alpha" {
+        if serialNo.text == userModel?.serialNo, deviceVersion.text == userModel?.deviceVersion, deviceName.text == userModel?.deviceName {
             return true
         }
-        showAlert(title: "Error", message: "Entered data did not match")
+        showAlert(title: "Error", message: "Entered data did not match") {
+            guard let deviceScreen = self.navigationController?.viewControllers[2] else { return }
+            self.navigationController?.popToViewController(deviceScreen, animated: true)
+        }
         return false
     }
 }

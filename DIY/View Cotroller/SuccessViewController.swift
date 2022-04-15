@@ -7,13 +7,21 @@
 
 import UIKit
 
-class SuccessViewController: UIViewController {
+class SuccessViewController: UIViewController, BluetoothNotification {
 
     var userModel: UserModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        subscribe()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        unsubscribe()
     }
     
     @IBAction func finishTapped() {

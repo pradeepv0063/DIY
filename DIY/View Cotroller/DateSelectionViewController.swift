@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DateSelectionViewController: BaseViewController {
+class DateSelectionViewController: BaseViewController, BluetoothNotification {
 
     var userModel: UserModel?
     @IBOutlet weak var datePicker: UIDatePicker!
@@ -15,6 +15,14 @@ class DateSelectionViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         datePicker.maximumDate = Date()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        subscribe()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        unsubscribe()
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

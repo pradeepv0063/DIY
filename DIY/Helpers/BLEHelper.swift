@@ -39,15 +39,14 @@ extension BLEHelper: CBCentralManagerDelegate {
     
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         switch central.state {
-        case .poweredOff:
-            state = .poweredOff
-            print("state = .poweredOff")
         case .poweredOn:
             state = .poweredOn
-            print("state = .poweredOn")
+        case .poweredOff:
+            state = .poweredOff
+            NotificationCenter.default.post(name: NotificationName.bleTurnedOff, object: nil)
         default:
             state = .unauthorised
-            print("state = .unauthorised")
+            
         }
     }
 }

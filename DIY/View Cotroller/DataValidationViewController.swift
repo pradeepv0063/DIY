@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DataValidationViewController: BaseViewController {
+class DataValidationViewController: BaseViewController, BluetoothNotification {
 
     @IBOutlet weak var selectedDevice: UITextField!
     @IBOutlet weak var serialNo: UITextField!
@@ -19,6 +19,14 @@ class DataValidationViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         selectedDevice.text = userModel?.deviceType.rawValue
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        subscribe()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        unsubscribe()
     }
 
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {

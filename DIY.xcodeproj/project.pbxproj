@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CC343D852809BC87004FFF37 /* BLEHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC343D842809BC87004FFF37 /* BLEHelper.swift */; };
+		CC343D872809E8BA004FFF37 /* BluetoothNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC343D862809E8BA004FFF37 /* BluetoothNotification.swift */; };
+		CC343D892809E9BC004FFF37 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC343D882809E9BC004FFF37 /* Constants.swift */; };
 		CC50D517280936DF00863885 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D516280936DF00863885 /* AppDelegate.swift */; };
 		CC50D519280936DF00863885 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D518280936DF00863885 /* SceneDelegate.swift */; };
 		CC50D51E280936DF00863885 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC50D51C280936DF00863885 /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		CC343D842809BC87004FFF37 /* BLEHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEHelper.swift; sourceTree = "<group>"; };
+		CC343D862809E8BA004FFF37 /* BluetoothNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothNotification.swift; sourceTree = "<group>"; };
+		CC343D882809E9BC004FFF37 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CC50D513280936DF00863885 /* DIY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DIY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC50D516280936DF00863885 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC50D518280936DF00863885 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 			children = (
 				CC50D54E28098F8A00863885 /* Extensions.swift */,
 				CC343D842809BC87004FFF37 /* BLEHelper.swift */,
+				CC343D862809E8BA004FFF37 /* BluetoothNotification.swift */,
+				CC343D882809E9BC004FFF37 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -226,6 +232,8 @@
 				CC50D545280981F700863885 /* SuccessViewController.swift in Sources */,
 				CC50D5392809819C00863885 /* WelcomeViewController.swift in Sources */,
 				CC50D53B280981A700863885 /* UserDetailsViewController.swift in Sources */,
+				CC343D892809E9BC004FFF37 /* Constants.swift in Sources */,
+				CC343D872809E8BA004FFF37 /* BluetoothNotification.swift in Sources */,
 				CC50D517280936DF00863885 /* AppDelegate.swift in Sources */,
 				CC50D541280981DB00863885 /* DateSelectionViewController.swift in Sources */,
 				CC50D543280981EB00863885 /* DataValidationViewController.swift in Sources */,

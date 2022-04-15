@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC343D852809BC87004FFF37 /* BLEHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC343D842809BC87004FFF37 /* BLEHelper.swift */; };
 		CC50D517280936DF00863885 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D516280936DF00863885 /* AppDelegate.swift */; };
 		CC50D519280936DF00863885 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D518280936DF00863885 /* SceneDelegate.swift */; };
 		CC50D51E280936DF00863885 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC50D51C280936DF00863885 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC343D842809BC87004FFF37 /* BLEHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEHelper.swift; sourceTree = "<group>"; };
 		CC50D513280936DF00863885 /* DIY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DIY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC50D516280936DF00863885 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC50D518280936DF00863885 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				CC50D54E28098F8A00863885 /* Extensions.swift */,
+				CC343D842809BC87004FFF37 /* BLEHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC50D53F280981C800863885 /* BLEConfirmationViewController.swift in Sources */,
+				CC343D852809BC87004FFF37 /* BLEHelper.swift in Sources */,
 				CC50D53D280981B600863885 /* DevicesViewController.swift in Sources */,
 				CC50D5472809824D00863885 /* BaseViewController.swift in Sources */,
 				CC50D545280981F700863885 /* SuccessViewController.swift in Sources */,
@@ -380,6 +384,7 @@
 				DEVELOPMENT_TEAM = 7NQ2QT4C3B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DIY/Supporting Files/Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "DIY Need Bluetooth permission to scan devices.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -408,6 +413,7 @@
 				DEVELOPMENT_TEAM = 7NQ2QT4C3B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DIY/Supporting Files/Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "DIY Need Bluetooth permission to scan devices.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

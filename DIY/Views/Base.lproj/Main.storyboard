@@ -319,9 +319,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3kP-Ah-Hoh">
-                                <rect key="frame" x="30" y="188" width="354" height="401"/>
+                                <rect key="frame" x="50" y="188" width="314" height="300"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="401" id="U03-om-8id"/>
+                                    <constraint firstAttribute="height" constant="300" id="U03-om-8id"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="2gY-J0-FoV">
@@ -351,16 +351,24 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enable Bluetooth and click Next" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bvr-UP-R7S">
+                                <rect key="frame" x="37.5" y="563" width="339" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IEZ-1u-yI5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Bvr-UP-R7S" firstAttribute="top" secondItem="3kP-Ah-Hoh" secondAttribute="bottom" constant="75" id="9vg-XX-98G"/>
                             <constraint firstItem="IEZ-1u-yI5" firstAttribute="bottom" secondItem="2gY-J0-FoV" secondAttribute="bottom" constant="50" id="DE9-1n-isW"/>
                             <constraint firstItem="2gY-J0-FoV" firstAttribute="leading" secondItem="IEZ-1u-yI5" secondAttribute="leading" constant="30" id="NzA-Au-gNv"/>
+                            <constraint firstItem="Bvr-UP-R7S" firstAttribute="centerX" secondItem="qxc-1K-1Fw" secondAttribute="centerX" id="Q7R-md-ZQi"/>
                             <constraint firstItem="IEZ-1u-yI5" firstAttribute="trailing" secondItem="2gY-J0-FoV" secondAttribute="trailing" constant="30" id="ZeB-aM-vfR"/>
                             <constraint firstItem="3kP-Ah-Hoh" firstAttribute="top" secondItem="IEZ-1u-yI5" secondAttribute="top" constant="100" id="hDe-ci-KVs"/>
-                            <constraint firstItem="IEZ-1u-yI5" firstAttribute="trailing" secondItem="3kP-Ah-Hoh" secondAttribute="trailing" constant="30" id="i3J-Fb-MF9"/>
-                            <constraint firstItem="3kP-Ah-Hoh" firstAttribute="leading" secondItem="IEZ-1u-yI5" secondAttribute="leading" constant="30" id="vGo-dO-B0A"/>
+                            <constraint firstItem="IEZ-1u-yI5" firstAttribute="trailing" secondItem="3kP-Ah-Hoh" secondAttribute="trailing" constant="50" id="i3J-Fb-MF9"/>
+                            <constraint firstItem="3kP-Ah-Hoh" firstAttribute="leading" secondItem="IEZ-1u-yI5" secondAttribute="leading" constant="50" id="vGo-dO-B0A"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zcL-kf-g4d"/>

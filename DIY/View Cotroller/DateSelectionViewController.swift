@@ -9,6 +9,8 @@ import UIKit
 
 class DateSelectionViewController: BaseViewController {
 
+    var userModel: UserModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -114,30 +114,45 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="oEm-Gb-4EY">
                                         <rect key="frame" x="102.5" y="0.0" width="251.5" height="230"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Ka-u1-ryk">
+                                            <textField opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="1Ka-u1-ryk">
                                                 <rect key="frame" x="0.0" y="0.0" width="251.5" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" textContentType="given-name"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="FE6-UG-ZCM" id="GPG-MM-6ab"/>
+                                                </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yz3-B0-SFe">
+                                            <textField opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Yz3-B0-SFe">
                                                 <rect key="frame" x="0.0" y="49" width="251.5" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" textContentType="family-name"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="FE6-UG-ZCM" id="oRP-iA-S8I"/>
+                                                </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gi4-Ec-IGG">
+                                            <textField opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="gi4-Ec-IGG">
                                                 <rect key="frame" x="0.0" y="98" width="251.5" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="FE6-UG-ZCM" id="1me-vW-hO2"/>
+                                                </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rJR-b6-jbs">
+                                            <textField opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rJR-b6-jbs">
                                                 <rect key="frame" x="0.0" y="147" width="251.5" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="street-address"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="FE6-UG-ZCM" id="eJu-ha-jCB"/>
+                                                </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ap-Ce-W7e">
+                                            <textField opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7ap-Ce-W7e">
                                                 <rect key="frame" x="0.0" y="196" width="251.5" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" textContentType="postal-code"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="FE6-UG-ZCM" id="LLc-9s-sdk"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -183,6 +198,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PHw-F1-JMW"/>
+                    <connections>
+                        <outlet property="address" destination="rJR-b6-jbs" id="EjL-X5-M4n"/>
+                        <outlet property="emailId" destination="gi4-Ec-IGG" id="cbe-qa-JVH"/>
+                        <outlet property="firstName" destination="1Ka-u1-ryk" id="4BE-WN-FiI"/>
+                        <outlet property="lastName" destination="Yz3-B0-SFe" id="WRp-NP-toT"/>
+                        <outlet property="pinCode" destination="7ap-Ce-W7e" id="ued-KN-xIt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RAe-bV-Ozz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -277,13 +299,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3kP-Ah-Hoh">
-                                <rect key="frame" x="30" y="188" width="354" height="401"/>
+                                <rect key="frame" x="30" y="188" width="354" height="424"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="2gY-J0-FoV">
-                                <rect key="frame" x="30" y="709" width="354" height="54"/>
+                                <rect key="frame" x="30" y="732" width="354" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cun-ES-S9V" customClass="NavButton" customModule="DIY" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="152" height="54"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <userDefinedRuntimeAttributes>
@@ -294,7 +316,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYS-qG-dMl" customClass="NavButton" customModule="DIY" customModuleProvider="target">
-                                        <rect key="frame" x="202" y="0.0" width="152" height="54"/>
+                                        <rect key="frame" x="202" y="0.0" width="152" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <userDefinedRuntimeAttributes>
@@ -456,10 +478,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="vyq-qC-Gma">
-                                <rect key="frame" x="30" y="709" width="354" height="54"/>
+                                <rect key="frame" x="30" y="732" width="354" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eC8-n5-ezp" customClass="NavButton" customModule="DIY" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="152" height="54"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <userDefinedRuntimeAttributes>
@@ -470,7 +492,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsn-8c-DBf" customClass="NavButton" customModule="DIY" customModuleProvider="target">
-                                        <rect key="frame" x="202" y="0.0" width="152" height="54"/>
+                                        <rect key="frame" x="202" y="0.0" width="152" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <userDefinedRuntimeAttributes>

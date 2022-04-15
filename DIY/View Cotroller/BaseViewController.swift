@@ -9,12 +9,14 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
+    var userModel: UserModel?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationItem.hidesBackButton = true
-        let cancelButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelTapped))
-        navigationItem.rightBarButtonItem  = cancelButton
+        addCancel()
+        addGesture()
     }
     
     @IBAction func cancelTapped() {
@@ -24,15 +26,21 @@ class BaseViewController: UIViewController {
     @IBAction func backTapped(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
+}
+
+private extension BaseViewController {
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func addCancel() {
+        let cancelButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelTapped))
+        navigationItem.leftBarButtonItem  = cancelButton
     }
-    */
-
+    
+    func addGesture() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(viewTapped))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func viewTapped() {
+        view.endEditing(true)
+    }
 }

@@ -21,6 +21,8 @@
 		CC50D543280981EB00863885 /* DataValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D542280981EB00863885 /* DataValidationViewController.swift */; };
 		CC50D545280981F700863885 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D544280981F700863885 /* SuccessViewController.swift */; };
 		CC50D5472809824D00863885 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D5462809824D00863885 /* BaseViewController.swift */; };
+		CC50D54A2809881600863885 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D5492809881600863885 /* UserModel.swift */; };
+		CC50D54F28098F8A00863885 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D54E28098F8A00863885 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		CC50D542280981EB00863885 /* DataValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataValidationViewController.swift; sourceTree = "<group>"; };
 		CC50D544280981F700863885 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 		CC50D5462809824D00863885 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CC50D5492809881600863885 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		CC50D54E28098F8A00863885 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +76,11 @@
 		CC50D515280936DF00863885 /* DIY */ = {
 			isa = PBXGroup;
 			children = (
-				CC50D52A280937A800863885 /* Application */,
 				CC50D52B280937B200863885 /* View Cotroller */,
+				CC50D548280987EA00863885 /* Models */,
 				CC50D52C280937BB00863885 /* Views */,
+				CC50D54B28098B0D00863885 /* Helpers */,
+				CC50D52A280937A800863885 /* Application */,
 				CC50D52D280937C200863885 /* Supporting Files */,
 			);
 			path = DIY;
@@ -121,6 +127,22 @@
 				CC50D524280936E100863885 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC50D548280987EA00863885 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CC50D5492809881600863885 /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CC50D54B28098B0D00863885 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CC50D54E28098F8A00863885 /* Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,7 +226,9 @@
 				CC50D541280981DB00863885 /* DateSelectionViewController.swift in Sources */,
 				CC50D543280981EB00863885 /* DataValidationViewController.swift in Sources */,
 				CC50D519280936DF00863885 /* SceneDelegate.swift in Sources */,
+				CC50D54A2809881600863885 /* UserModel.swift in Sources */,
 				CC50D53128093AAC00863885 /* NavButton.swift in Sources */,
+				CC50D54F28098F8A00863885 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

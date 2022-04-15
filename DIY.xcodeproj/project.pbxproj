@@ -9,23 +9,37 @@
 /* Begin PBXBuildFile section */
 		CC50D517280936DF00863885 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D516280936DF00863885 /* AppDelegate.swift */; };
 		CC50D519280936DF00863885 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D518280936DF00863885 /* SceneDelegate.swift */; };
-		CC50D51B280936DF00863885 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D51A280936DF00863885 /* ViewController.swift */; };
 		CC50D51E280936DF00863885 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC50D51C280936DF00863885 /* Main.storyboard */; };
 		CC50D520280936E100863885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC50D51F280936E100863885 /* Assets.xcassets */; };
 		CC50D523280936E100863885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC50D521280936E100863885 /* LaunchScreen.storyboard */; };
 		CC50D53128093AAC00863885 /* NavButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D53028093AAC00863885 /* NavButton.swift */; };
+		CC50D5392809819C00863885 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D5382809819C00863885 /* WelcomeViewController.swift */; };
+		CC50D53B280981A700863885 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D53A280981A700863885 /* UserDetailsViewController.swift */; };
+		CC50D53D280981B600863885 /* DevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D53C280981B600863885 /* DevicesViewController.swift */; };
+		CC50D53F280981C800863885 /* BLEConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D53E280981C800863885 /* BLEConfirmationViewController.swift */; };
+		CC50D541280981DB00863885 /* DateSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D540280981DB00863885 /* DateSelectionViewController.swift */; };
+		CC50D543280981EB00863885 /* DataValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D542280981EB00863885 /* DataValidationViewController.swift */; };
+		CC50D545280981F700863885 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D544280981F700863885 /* SuccessViewController.swift */; };
+		CC50D5472809824D00863885 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D5462809824D00863885 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CC50D513280936DF00863885 /* DIY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DIY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC50D516280936DF00863885 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC50D518280936DF00863885 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CC50D51A280936DF00863885 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CC50D51D280936DF00863885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC50D51F280936E100863885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC50D522280936E100863885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC50D524280936E100863885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC50D53028093AAC00863885 /* NavButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavButton.swift; sourceTree = "<group>"; };
+		CC50D5382809819C00863885 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		CC50D53A280981A700863885 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		CC50D53C280981B600863885 /* DevicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewController.swift; sourceTree = "<group>"; };
+		CC50D53E280981C800863885 /* BLEConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEConfirmationViewController.swift; sourceTree = "<group>"; };
+		CC50D540280981DB00863885 /* DateSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectionViewController.swift; sourceTree = "<group>"; };
+		CC50D542280981EB00863885 /* DataValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataValidationViewController.swift; sourceTree = "<group>"; };
+		CC50D544280981F700863885 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		CC50D5462809824D00863885 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +92,14 @@
 		CC50D52B280937B200863885 /* View Cotroller */ = {
 			isa = PBXGroup;
 			children = (
-				CC50D51A280936DF00863885 /* ViewController.swift */,
+				CC50D5462809824D00863885 /* BaseViewController.swift */,
+				CC50D5382809819C00863885 /* WelcomeViewController.swift */,
+				CC50D53A280981A700863885 /* UserDetailsViewController.swift */,
+				CC50D53C280981B600863885 /* DevicesViewController.swift */,
+				CC50D53E280981C800863885 /* BLEConfirmationViewController.swift */,
+				CC50D540280981DB00863885 /* DateSelectionViewController.swift */,
+				CC50D542280981EB00863885 /* DataValidationViewController.swift */,
+				CC50D544280981F700863885 /* SuccessViewController.swift */,
 			);
 			path = "View Cotroller";
 			sourceTree = "<group>";
@@ -173,8 +194,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC50D51B280936DF00863885 /* ViewController.swift in Sources */,
+				CC50D53F280981C800863885 /* BLEConfirmationViewController.swift in Sources */,
+				CC50D53D280981B600863885 /* DevicesViewController.swift in Sources */,
+				CC50D5472809824D00863885 /* BaseViewController.swift in Sources */,
+				CC50D545280981F700863885 /* SuccessViewController.swift in Sources */,
+				CC50D5392809819C00863885 /* WelcomeViewController.swift in Sources */,
+				CC50D53B280981A700863885 /* UserDetailsViewController.swift in Sources */,
 				CC50D517280936DF00863885 /* AppDelegate.swift in Sources */,
+				CC50D541280981DB00863885 /* DateSelectionViewController.swift in Sources */,
+				CC50D543280981EB00863885 /* DataValidationViewController.swift in Sources */,
 				CC50D519280936DF00863885 /* SceneDelegate.swift in Sources */,
 				CC50D53128093AAC00863885 /* NavButton.swift in Sources */,
 			);

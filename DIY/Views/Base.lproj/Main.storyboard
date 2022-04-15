@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="249" y="123"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DIY" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="DIY" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -63,12 +63,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="959" y="123"/>
+            <point key="canvasLocation" x="1064" y="124"/>
         </scene>
-        <!--Second View Controller-->
+        <!--User Details View Controller-->
         <scene sceneID="PbP-DG-RWA">
             <objects>
-                <viewController id="FE6-UG-ZCM" customClass="SecondViewController" customModule="DIY" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FE6-UG-ZCM" customClass="UserDetailsViewController" customModule="DIY" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ine-U5-vn2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -154,7 +154,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isNextBtn" value="NO"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="backTapped:" destination="FE6-UG-ZCM" eventType="touchUpInside" id="Ybo-KS-a5C"/>
+                                            <action selector="backTapped:" destination="FE6-UG-ZCM" eventType="touchUpInside" id="4mV-C1-Ie8"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kw4-3o-Jbi" customClass="NavButton" customModule="DIY" customModuleProvider="target">
@@ -182,18 +182,16 @@
                             <constraint firstItem="HZB-iq-xMa" firstAttribute="leading" secondItem="uoi-Xx-Jqd" secondAttribute="leading" constant="30" id="mzW-Ty-g7t"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="PHw-F1-JMW">
-                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="hfQ-mX-7RS"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="PHw-F1-JMW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RAe-bV-Ozz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1797" y="123"/>
+            <point key="canvasLocation" x="1926" y="123"/>
         </scene>
-        <!--View Controller-->
+        <!--Devices View Controller-->
         <scene sceneID="dhl-Qe-5DE">
             <objects>
-                <viewController id="Ff1-3Q-JAt" sceneMemberID="viewController">
+                <viewController id="Ff1-3Q-JAt" customClass="DevicesViewController" customModule="DIY" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vQB-P6-ryt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,6 +230,9 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isNextBtn" value="NO"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="backTapped:" destination="Ff1-3Q-JAt" eventType="touchUpInside" id="JKb-It-2Oy"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zr-Pm-v02" customClass="NavButton" customModule="DIY" customModuleProvider="target">
                                         <rect key="frame" x="202" y="0.0" width="152" height="54"/>
@@ -260,19 +261,17 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="IVl-RS-Kui">
-                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="IEY-dj-8J9"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="IVl-RS-Kui"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AwT-3z-CBX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2578" y="124"/>
+            <point key="canvasLocation" x="2764" y="124"/>
         </scene>
-        <!--View Controller-->
+        <!--Confirmation View Controller-->
         <scene sceneID="skl-vI-XMj">
             <objects>
-                <viewController id="cJq-N9-z4S" sceneMemberID="viewController">
+                <viewController id="cJq-N9-z4S" customClass="BLEConfirmationViewController" customModule="DIY" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qxc-1K-1Fw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -290,6 +289,9 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isNextBtn" value="NO"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="backTapped:" destination="cJq-N9-z4S" eventType="touchUpInside" id="3eA-0n-nYQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYS-qG-dMl" customClass="NavButton" customModule="DIY" customModuleProvider="target">
                                         <rect key="frame" x="202" y="0.0" width="152" height="54"/>
@@ -321,18 +323,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ybn-Zv-1pS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3396" y="123"/>
+            <point key="canvasLocation" x="3614" y="123"/>
         </scene>
-        <!--View Controller-->
+        <!--Date Selection View Controller-->
         <scene sceneID="khS-kp-tti">
             <objects>
-                <viewController id="Bx2-ny-K2a" sceneMemberID="viewController">
+                <viewController id="Bx2-ny-K2a" customClass="DateSelectionViewController" customModule="DIY" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VCs-31-lcD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="MOd-6R-ieV">
-                                <rect key="frame" x="12" y="163" width="391" height="364"/>
+                                <rect key="frame" x="11.5" y="162.5" width="391" height="364"/>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected Date: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNi-cW-0KX">
                                 <rect key="frame" x="149" y="566.5" width="116.5" height="20.5"/>
@@ -350,6 +352,9 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isNextBtn" value="NO"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="backTapped:" destination="Bx2-ny-K2a" eventType="touchUpInside" id="mZX-qc-zea"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKz-Pq-aeR" customClass="NavButton" customModule="DIY" customModuleProvider="target">
                                         <rect key="frame" x="202" y="0.0" width="152" height="54"/>
@@ -381,12 +386,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yjx-Zi-wKX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4194" y="123"/>
+            <point key="canvasLocation" x="4451" y="123"/>
         </scene>
-        <!--View Controller-->
+        <!--Data Validation View Controller-->
         <scene sceneID="9GH-eY-40Z">
             <objects>
-                <viewController id="hhW-LR-blb" sceneMemberID="viewController">
+                <viewController id="hhW-LR-blb" customClass="DataValidationViewController" customModule="DIY" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HHF-Xx-KAf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -460,6 +465,9 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isNextBtn" value="NO"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="backTapped:" destination="hhW-LR-blb" eventType="touchUpInside" id="jcL-m8-YgV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsn-8c-DBf" customClass="NavButton" customModule="DIY" customModuleProvider="target">
                                         <rect key="frame" x="202" y="0.0" width="152" height="54"/>
@@ -490,12 +498,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lm9-ex-ZEh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5019" y="130"/>
+            <point key="canvasLocation" x="5335" y="124"/>
         </scene>
-        <!--View Controller-->
+        <!--Success View Controller-->
         <scene sceneID="oi0-fQ-u0Q">
             <objects>
-                <viewController id="4KQ-O5-pDa" sceneMemberID="viewController">
+                <viewController id="4KQ-O5-pDa" customClass="SuccessViewController" customModule="DIY" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p1R-FX-w5p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -503,14 +511,18 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIA-aa-UUO">
                                 <rect key="frame" x="147" y="709" width="120" height="54"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="1PB-6t-oB7"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="1PB-6t-oB7"/>
                                     <constraint firstAttribute="height" constant="54" id="SF8-o7-ZG8"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Finish">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="cancelTapped" destination="4KQ-O5-pDa" eventType="touchUpInside" id="nLO-at-t5c"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIY Done Successfully" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOl-Wx-ZoA">
                                 <rect key="frame" x="97.5" y="406" width="219" height="84"/>
@@ -533,7 +545,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KaM-qQ-e5o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5864" y="139"/>
+            <point key="canvasLocation" x="6167" y="124"/>
         </scene>
     </scenes>
     <designables>

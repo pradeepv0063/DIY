@@ -7,13 +7,13 @@
 
 import Foundation
 
-enum DeviceType: String {
+enum DeviceType: String, Encodable {
     case bgm = "BGM Meter"
     case pen = "BLE Pen"
     case unknown = ""
 }
 
-struct UserModel {
+struct UserModel: Encodable {
     
     let firstName: String
     let lastName: String

@@ -17,7 +17,7 @@ class BaseViewController: UIViewController {
         addGesture()
     }
     
-    @IBAction func cancelTapped() {
+    @objc func cancelTapped() {
         navigationController?.popToRootViewController(animated: true)
     }
     

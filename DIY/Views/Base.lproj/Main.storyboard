@@ -601,7 +601,7 @@
                                     <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="cancelTapped" destination="4KQ-O5-pDa" eventType="touchUpInside" id="nLO-at-t5c"/>
+                                    <action selector="finishTapped" destination="4KQ-O5-pDa" eventType="touchUpInside" id="voK-Gm-q5d"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIY Done Successfully" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOl-Wx-ZoA">

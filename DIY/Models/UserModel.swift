@@ -19,4 +19,5 @@ struct UserModel {
     let address: String
     let pinCode: String
     var deviceType: DeviceType = .unknown
+    var date: String = ""
 }

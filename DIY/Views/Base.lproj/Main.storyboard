@@ -39,7 +39,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PU-Py-Wkf" customClass="NavButton" customModule="DIY" customModuleProvider="target">
-                                <rect key="frame" x="151" y="758" width="112.5" height="54"/>
+                                <rect key="frame" x="173.5" y="781" width="67" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <userDefinedRuntimeAttributes>
@@ -159,10 +159,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="HZB-iq-xMa">
-                                <rect key="frame" x="30" y="758" width="354" height="54"/>
+                                <rect key="frame" x="30" y="781" width="354" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZu-u8-w0p" customClass="NavButton" customModule="DIY" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="152" height="54"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <userDefinedRuntimeAttributes>
@@ -173,7 +173,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kw4-3o-Jbi" customClass="NavButton" customModule="DIY" customModuleProvider="target">
-                                        <rect key="frame" x="202" y="0.0" width="152" height="54"/>
+                                        <rect key="frame" x="202" y="0.0" width="152" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <userDefinedRuntimeAttributes>
@@ -260,10 +260,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="5lF-nd-QcM">
-                                <rect key="frame" x="30" y="709" width="354" height="54"/>
+                                <rect key="frame" x="30" y="732" width="354" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xsi-e2-Pb5" customClass="NavButton" customModule="DIY" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="152" height="54"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <userDefinedRuntimeAttributes>
@@ -274,7 +274,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zr-Pm-v02" customClass="NavButton" customModule="DIY" customModuleProvider="target">
-                                        <rect key="frame" x="202" y="0.0" width="152" height="54"/>
+                                        <rect key="frame" x="202" y="0.0" width="152" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <userDefinedRuntimeAttributes>
@@ -325,10 +325,10 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="2gY-J0-FoV">
-                                <rect key="frame" x="30" y="709" width="354" height="54"/>
+                                <rect key="frame" x="30" y="732" width="354" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cun-ES-S9V" customClass="NavButton" customModule="DIY" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="152" height="54"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <userDefinedRuntimeAttributes>
@@ -339,7 +339,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYS-qG-dMl" customClass="NavButton" customModule="DIY" customModuleProvider="target">
-                                        <rect key="frame" x="202" y="0.0" width="152" height="54"/>
+                                        <rect key="frame" x="202" y="0.0" width="152" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <userDefinedRuntimeAttributes>
@@ -388,20 +388,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="MOd-6R-ieV">
-                                <rect key="frame" x="11.5" y="162.5" width="391" height="364"/>
-                            </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected Date: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNi-cW-0KX">
-                                <rect key="frame" x="149" y="566.5" width="116.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ipH-ke-0FP">
+                                <rect key="frame" x="102" y="348.5" width="210" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Date: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNi-cW-0KX">
+                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="MOd-6R-ieV">
+                                        <rect key="frame" x="103.5" y="0.0" width="106.5" height="50"/>
+                                    </datePicker>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="eco-Ud-RtR"/>
+                                </constraints>
+                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="W8h-ue-wy4">
-                                <rect key="frame" x="30" y="709" width="354" height="54"/>
+                                <rect key="frame" x="30" y="732" width="354" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzy-w3-gM2" customClass="NavButton" customModule="DIY" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="152" height="54"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <userDefinedRuntimeAttributes>
@@ -412,7 +420,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKz-Pq-aeR" customClass="NavButton" customModule="DIY" customModuleProvider="target">
-                                        <rect key="frame" x="202" y="0.0" width="152" height="54"/>
+                                        <rect key="frame" x="202" y="0.0" width="152" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <userDefinedRuntimeAttributes>
@@ -429,19 +437,20 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="W8h-ue-wy4" firstAttribute="leading" secondItem="ErL-ab-yfL" secondAttribute="leading" constant="30" id="00l-d0-6yJ"/>
-                            <constraint firstItem="hNi-cW-0KX" firstAttribute="centerX" secondItem="VCs-31-lcD" secondAttribute="centerX" id="3sL-rW-2EB"/>
                             <constraint firstItem="ErL-ab-yfL" firstAttribute="trailing" secondItem="W8h-ue-wy4" secondAttribute="trailing" constant="30" id="5EF-od-jzk"/>
-                            <constraint firstItem="MOd-6R-ieV" firstAttribute="centerX" secondItem="VCs-31-lcD" secondAttribute="centerX" id="OkO-ze-bjl"/>
-                            <constraint firstItem="MOd-6R-ieV" firstAttribute="centerY" secondItem="VCs-31-lcD" secondAttribute="centerY" multiplier="1:1.3" id="QKq-lh-Vhs"/>
-                            <constraint firstItem="hNi-cW-0KX" firstAttribute="top" secondItem="MOd-6R-ieV" secondAttribute="bottom" constant="40" id="VAz-Mr-gFd"/>
                             <constraint firstItem="ErL-ab-yfL" firstAttribute="bottom" secondItem="W8h-ue-wy4" secondAttribute="bottom" constant="50" id="hpj-OK-23V"/>
+                            <constraint firstItem="ipH-ke-0FP" firstAttribute="centerX" secondItem="VCs-31-lcD" secondAttribute="centerX" id="wyD-Tl-jpx"/>
+                            <constraint firstItem="ipH-ke-0FP" firstAttribute="centerY" secondItem="VCs-31-lcD" secondAttribute="centerY" multiplier="1:1.2" id="z2A-wi-lFY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cph-L6-Iyx"/>
+                    <connections>
+                        <outlet property="datePicker" destination="MOd-6R-ieV" id="4Fm-s9-5Rh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yjx-Zi-wKX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4451" y="123"/>
+            <point key="canvasLocation" x="4450.7246376811599" y="122.54464285714285"/>
         </scene>
         <!--Data Validation View Controller-->
         <scene sceneID="9GH-eY-40Z">
@@ -511,10 +520,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="vyq-qC-Gma">
-                                <rect key="frame" x="30" y="709" width="354" height="54"/>
+                                <rect key="frame" x="30" y="732" width="354" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eC8-n5-ezp" customClass="NavButton" customModule="DIY" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="152" height="54"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <userDefinedRuntimeAttributes>
@@ -525,7 +534,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsn-8c-DBf" customClass="NavButton" customModule="DIY" customModuleProvider="target">
-                                        <rect key="frame" x="202" y="0.0" width="152" height="54"/>
+                                        <rect key="frame" x="202" y="0.0" width="152" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <userDefinedRuntimeAttributes>
@@ -605,37 +614,37 @@
     </scenes>
     <designables>
         <designable name="7zr-Pm-v02">
-            <size key="intrinsicContentSize" width="112.5" height="54"/>
+            <size key="intrinsicContentSize" width="67" height="31"/>
         </designable>
         <designable name="8PU-Py-Wkf">
-            <size key="intrinsicContentSize" width="112.5" height="54"/>
+            <size key="intrinsicContentSize" width="67" height="31"/>
         </designable>
         <designable name="Cun-ES-S9V">
-            <size key="intrinsicContentSize" width="115" height="54"/>
+            <size key="intrinsicContentSize" width="67" height="31"/>
         </designable>
         <designable name="Kw4-3o-Jbi">
-            <size key="intrinsicContentSize" width="112.5" height="54"/>
+            <size key="intrinsicContentSize" width="67" height="31"/>
         </designable>
         <designable name="MKz-Pq-aeR">
-            <size key="intrinsicContentSize" width="112.5" height="54"/>
+            <size key="intrinsicContentSize" width="67" height="31"/>
         </designable>
         <designable name="Xsi-e2-Pb5">
-            <size key="intrinsicContentSize" width="115" height="54"/>
+            <size key="intrinsicContentSize" width="67" height="31"/>
         </designable>
         <designable name="eC8-n5-ezp">
-            <size key="intrinsicContentSize" width="115" height="54"/>
+            <size key="intrinsicContentSize" width="67" height="31"/>
         </designable>
         <designable name="gZu-u8-w0p">
-            <size key="intrinsicContentSize" width="115" height="54"/>
+            <size key="intrinsicContentSize" width="67" height="31"/>
         </designable>
         <designable name="gzy-w3-gM2">
-            <size key="intrinsicContentSize" width="115" height="54"/>
+            <size key="intrinsicContentSize" width="67" height="31"/>
         </designable>
         <designable name="lYS-qG-dMl">
-            <size key="intrinsicContentSize" width="112.5" height="54"/>
+            <size key="intrinsicContentSize" width="67" height="31"/>
         </designable>
         <designable name="zsn-8c-DBf">
-            <size key="intrinsicContentSize" width="112.5" height="54"/>
+            <size key="intrinsicContentSize" width="67" height="31"/>
         </designable>
     </designables>
     <resources>

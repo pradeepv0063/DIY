@@ -27,3 +27,13 @@ extension UIViewController {
         present(alert, animated: true)
     }
 }
+
+extension Date {
+    
+    func toString() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd/MM/YY"
+        let dateString = formatter.string(from: self)
+        return dateString
+    }
+}

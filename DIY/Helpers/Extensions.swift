@@ -40,3 +40,10 @@ extension Date {
         return dateString
     }
 }
+
+extension Optional where Wrapped == String {
+    
+    var isBlank: Bool {
+        return self?.isEmpty ?? true
+    }
+}

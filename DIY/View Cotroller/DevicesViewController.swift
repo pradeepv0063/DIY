@@ -26,7 +26,7 @@ class DevicesViewController: BaseViewController {
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        let values = validateSelection()
+        let values = validateSelection(penStatus: penSwitch.isOn, bgmStatus: bgmSwitch.isOn)
         if !values.success {
             showAlert(title: values.title, message: values.message)
         }
@@ -42,9 +42,9 @@ class DevicesViewController: BaseViewController {
 
 extension DevicesViewController {
     
-    func validateSelection() -> (success: Bool, title: String, message: String) {
+    func validateSelection(penStatus: Bool, bgmStatus: Bool) -> (success: Bool, title: String, message: String) {
         
-        if !penSwitch.isOn && !bgmSwitch.isOn {
+        if !penStatus && !bgmStatus {
             return (false, "Alert", "Please select any one device")
         }
         return (true, "", "")

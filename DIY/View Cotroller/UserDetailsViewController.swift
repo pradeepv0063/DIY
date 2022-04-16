@@ -15,12 +15,15 @@ class UserDetailsViewController: BaseViewController {
     @IBOutlet weak var address: UITextField!
     @IBOutlet weak var pinCode: UITextField!
 
+    var userModel: UserModel = UserModel(firstName: "", lastName: "", emailId: "", address: "", pinCode: "")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        let values = validateField()
+        userModel = setUserData()
+        let values = validateField(usermodel: userModel)
         if !values.success {
             showAlert(title: values.title, message: values.message)
         }
@@ -29,21 +32,23 @@ class UserDetailsViewController: BaseViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as? DevicesViewController ?? DevicesViewController()
-        destination.userModel = setUserData()
+        destination.userModel = userModel
     }
 }
 
 extension UserDetailsViewController {
     
-    func validateField() -> (success: Bool, title: String, message: String) {
-        if firstName.text!.isEmpty ||
-            lastName.text!.isEmpty ||
-            emailId.text!.isEmpty ||
-            address.text!.isEmpty ||
-            pinCode.text!.isEmpty {
+    func validateField(usermodel: UserModel) -> (success: Bool, title: String, message: String) {
+        
+        if usermodel.firstName.isEmpty ||
+            usermodel.lastName.isEmpty ||
+            usermodel.emailId.isEmpty ||
+            usermodel.address.isEmpty ||
+            usermodel.pinCode.isEmpty {
 
             return (false, "Missing Details", "Please fill all Text Fields to continue")
-        } else if !emailId.text!.isValidEmail {
+            
+        } else if !usermodel.emailId.isValidEmail {
 
             return (false, "Alert", "Please enter valid Email Id")
         }
@@ -51,11 +56,11 @@ extension UserDetailsViewController {
     }
     
     func setUserData() -> UserModel {
-        let model = UserModel(firstName: firstName.text!,
-                              lastName: lastName.text!,
-                              emailId: emailId.text!,
-                              address: address.text!,
-                              pinCode: pinCode.text!)
+        let model = UserModel(firstName: firstName.text ?? "",
+                              lastName: lastName.text ?? "",
+                              emailId: emailId.text ?? "",
+                              address: address.text ?? "",
+                              pinCode: pinCode.text ?? "")
         return model
     }
 }

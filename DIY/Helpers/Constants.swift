@@ -16,3 +16,8 @@ struct NotificationHandler {
 
     static var notificationInfo: [String: Any] = [: ]
 }
+
+enum ImageNames: String {
+    case pen = "BLE Pen"
+    case bgm = "BGM Meter"
+}

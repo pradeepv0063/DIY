@@ -30,7 +30,7 @@ class DataValidationViewController: BaseViewController, BluetoothNotification {
     }
 
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        let values = validate()
+        let values = validate(serialNo: serialNo.text, deviceVersion: deviceVersion.text, deviceName: deviceName.text)
         if !values.success {
             showAlert(title: values.title, message: values.message) {
                 guard let deviceScreen = self.navigationController?.viewControllers[2] else { return }
@@ -48,9 +48,9 @@ class DataValidationViewController: BaseViewController, BluetoothNotification {
 
 extension DataValidationViewController {
     
-    func validate() -> (success: Bool, title: String, message: String) {
+    func validate(serialNo: String?, deviceVersion: String?, deviceName: String?) -> (success: Bool, title: String, message: String) {
         
-        if serialNo.text == userModel?.serialNo, deviceVersion.text == userModel?.deviceVersion, deviceName.text == userModel?.deviceName {
+        if serialNo == userModel?.serialNo, deviceVersion == userModel?.deviceVersion, deviceName == userModel?.deviceName {
             return (true, "", "")
         }
         

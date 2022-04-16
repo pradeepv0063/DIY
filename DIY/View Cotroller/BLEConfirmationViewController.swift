@@ -11,7 +11,7 @@ class BLEConfirmationViewController: BaseViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     var userModel: UserModel?
-    let bleHelper: BLEHelpProvidable = BLEHelper.shared
+    var bleHelper: BLEHelpProvidable = BLEHelper.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,9 +37,9 @@ extension BLEConfirmationViewController {
     
     func getImageName() -> String {
         if userModel?.deviceType == .pen {
-            return "BLE Pen"
+            return ImageNames.pen.rawValue
         } else {
-            return "BGM Meter"
+            return ImageNames.bgm.rawValue
         }
     }
     

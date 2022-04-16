@@ -34,8 +34,11 @@ class DevicesViewController: BaseViewController {
         setDevice()
         destination.userModel = userModel
     }
+}
+
+private extension DevicesViewController {
     
-    private func validateSelection() -> Bool {
+    func validateSelection() -> Bool {
         
         if !penSwitch.isOn && !bgmSwitch.isOn {
             showAlert(title: "Alert", message: "Please select any one device")

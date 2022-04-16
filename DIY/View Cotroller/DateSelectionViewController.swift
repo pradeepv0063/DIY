@@ -27,7 +27,15 @@ class DateSelectionViewController: BaseViewController, BluetoothNotification {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as? DataValidationViewController ?? DataValidationViewController()
-        userModel?.date = datePicker.date.toString()
+        setDate()
         destination.userModel = userModel
     }
+}
+
+private extension DateSelectionViewController {
+    
+    func setDate() {
+        userModel?.date = datePicker.date.toString()
+    }
+    
 }

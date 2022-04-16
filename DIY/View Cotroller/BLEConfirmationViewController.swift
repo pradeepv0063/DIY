@@ -31,8 +31,11 @@ class BLEConfirmationViewController: BaseViewController {
         let destination = segue.destination as? DateSelectionViewController ?? DateSelectionViewController()
         destination.userModel = userModel
     }
+}
 
-    private func isBluetoothOn() -> Bool {
+private extension BLEConfirmationViewController {
+    
+    func isBluetoothOn() -> Bool {
 
         let state = BLEHelper.shared.getState()
         if state == .poweredOff {

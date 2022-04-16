@@ -11,10 +11,11 @@ class BLEConfirmationViewController: BaseViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     var userModel: UserModel?
+    let bleHelper: BLEHelpProvidable = BLEHelper.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        BLEHelper.shared.initiate()
+        bleHelper.initiate()
         if userModel?.deviceType == .pen {
             imageView.image = UIImage(named: "BLE Pen")
         } else {
@@ -37,7 +38,7 @@ private extension BLEConfirmationViewController {
     
     func isBluetoothOn() -> Bool {
 
-        let state = BLEHelper.shared.getState()
+        let state = bleHelper.getState()
         if state == .poweredOff {
             showAlert(title: "Alert", message: "Please enable Bluetooth to proceed")
             return false

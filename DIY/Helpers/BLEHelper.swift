@@ -12,7 +12,14 @@ enum BLEState {
     case poweredOn, poweredOff, unauthorised
 }
 
-class BLEHelper: NSObject {
+protocol BLEHelpProvidable {
+    
+    func initiate()
+    
+    func getState() -> BLEState
+}
+
+class BLEHelper: NSObject, BLEHelpProvidable {
     
     var centralManager: CBCentralManager!
     private var state: BLEState = .unauthorised

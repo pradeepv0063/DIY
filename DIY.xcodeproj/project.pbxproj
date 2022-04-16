@@ -11,6 +11,7 @@
 		CC343D872809E8BA004FFF37 /* BluetoothNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC343D862809E8BA004FFF37 /* BluetoothNotification.swift */; };
 		CC343D892809E9BC004FFF37 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC343D882809E9BC004FFF37 /* Constants.swift */; };
 		CC343D9E280A9468004FFF37 /* DIYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC343D9D280A9468004FFF37 /* DIYTests.swift */; };
+		CC343DA5280AA340004FFF37 /* MockBLEHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC343DA4280AA340004FFF37 /* MockBLEHelper.swift */; };
 		CC50D517280936DF00863885 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D516280936DF00863885 /* AppDelegate.swift */; };
 		CC50D519280936DF00863885 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D518280936DF00863885 /* SceneDelegate.swift */; };
 		CC50D51E280936DF00863885 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC50D51C280936DF00863885 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		CC50D5472809824D00863885 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D5462809824D00863885 /* BaseViewController.swift */; };
 		CC50D54A2809881600863885 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D5492809881600863885 /* UserModel.swift */; };
 		CC50D54F28098F8A00863885 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D54E28098F8A00863885 /* Extensions.swift */; };
+		CC9888B1280AA77500349ACA /* Extension Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9888B0280AA77500349ACA /* Extension Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,7 @@
 		CC343D882809E9BC004FFF37 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CC343D9B280A9468004FFF37 /* DIYTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DIYTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC343D9D280A9468004FFF37 /* DIYTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIYTests.swift; sourceTree = "<group>"; };
+		CC343DA4280AA340004FFF37 /* MockBLEHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBLEHelper.swift; sourceTree = "<group>"; };
 		CC50D513280936DF00863885 /* DIY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DIY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC50D516280936DF00863885 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC50D518280936DF00863885 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +66,7 @@
 		CC50D5462809824D00863885 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		CC50D5492809881600863885 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		CC50D54E28098F8A00863885 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CC9888B0280AA77500349ACA /* Extension Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension Tests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				CC343D9D280A9468004FFF37 /* DIYTests.swift */,
+				CC343DA4280AA340004FFF37 /* MockBLEHelper.swift */,
+				CC9888B0280AA77500349ACA /* Extension Tests.swift */,
 			);
 			path = DIYTests;
 			sourceTree = "<group>";
@@ -285,7 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC9888B1280AA77500349ACA /* Extension Tests.swift in Sources */,
 				CC343D9E280A9468004FFF37 /* DIYTests.swift in Sources */,
+				CC343DA5280AA340004FFF37 /* MockBLEHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

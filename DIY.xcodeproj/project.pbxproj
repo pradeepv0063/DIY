@@ -10,6 +10,7 @@
 		CC343D852809BC87004FFF37 /* BLEHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC343D842809BC87004FFF37 /* BLEHelper.swift */; };
 		CC343D872809E8BA004FFF37 /* BluetoothNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC343D862809E8BA004FFF37 /* BluetoothNotification.swift */; };
 		CC343D892809E9BC004FFF37 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC343D882809E9BC004FFF37 /* Constants.swift */; };
+		CC343D9E280A9468004FFF37 /* DIYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC343D9D280A9468004FFF37 /* DIYTests.swift */; };
 		CC50D517280936DF00863885 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D516280936DF00863885 /* AppDelegate.swift */; };
 		CC50D519280936DF00863885 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D518280936DF00863885 /* SceneDelegate.swift */; };
 		CC50D51E280936DF00863885 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC50D51C280936DF00863885 /* Main.storyboard */; };
@@ -28,10 +29,22 @@
 		CC50D54F28098F8A00863885 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC50D54E28098F8A00863885 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CC343D9F280A9468004FFF37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC50D50B280936DF00863885 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC50D512280936DF00863885;
+			remoteInfo = DIY;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		CC343D842809BC87004FFF37 /* BLEHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEHelper.swift; sourceTree = "<group>"; };
 		CC343D862809E8BA004FFF37 /* BluetoothNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothNotification.swift; sourceTree = "<group>"; };
 		CC343D882809E9BC004FFF37 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CC343D9B280A9468004FFF37 /* DIYTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DIYTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC343D9D280A9468004FFF37 /* DIYTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIYTests.swift; sourceTree = "<group>"; };
 		CC50D513280936DF00863885 /* DIY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DIY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC50D516280936DF00863885 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC50D518280936DF00863885 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +66,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CC343D98280A9468004FFF37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CC50D510280936DF00863885 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,10 +83,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC343D9C280A9468004FFF37 /* DIYTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC343D9D280A9468004FFF37 /* DIYTests.swift */,
+			);
+			path = DIYTests;
+			sourceTree = "<group>";
+		};
 		CC50D50A280936DF00863885 = {
 			isa = PBXGroup;
 			children = (
 				CC50D515280936DF00863885 /* DIY */,
+				CC343D9C280A9468004FFF37 /* DIYTests */,
 				CC50D514280936DF00863885 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				CC50D513280936DF00863885 /* DIY.app */,
+				CC343D9B280A9468004FFF37 /* DIYTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,6 +187,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CC343D9A280A9468004FFF37 /* DIYTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC343DA3280A9468004FFF37 /* Build configuration list for PBXNativeTarget "DIYTests" */;
+			buildPhases = (
+				CC343D97280A9468004FFF37 /* Sources */,
+				CC343D98280A9468004FFF37 /* Frameworks */,
+				CC343D99280A9468004FFF37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC343DA0280A9468004FFF37 /* PBXTargetDependency */,
+			);
+			name = DIYTests;
+			productName = DIYTests;
+			productReference = CC343D9B280A9468004FFF37 /* DIYTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CC50D512280936DF00863885 /* DIY */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC50D527280936E100863885 /* Build configuration list for PBXNativeTarget "DIY" */;
@@ -184,6 +232,10 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					CC343D9A280A9468004FFF37 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = CC50D512280936DF00863885;
+					};
 					CC50D512280936DF00863885 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -203,11 +255,19 @@
 			projectRoot = "";
 			targets = (
 				CC50D512280936DF00863885 /* DIY */,
+				CC343D9A280A9468004FFF37 /* DIYTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CC343D99280A9468004FFF37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CC50D511280936DF00863885 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -221,6 +281,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CC343D97280A9468004FFF37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC343D9E280A9468004FFF37 /* DIYTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CC50D50F280936DF00863885 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,6 +314,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CC343DA0280A9468004FFF37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC50D512280936DF00863885 /* DIY */;
+			targetProxy = CC343D9F280A9468004FFF37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		CC50D51C280936DF00863885 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -266,6 +342,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CC343DA1280A9468004FFF37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NQ2QT4C3B;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pradeep.DIYTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DIY.app/DIY";
+			};
+			name = Debug;
+		};
+		CC343DA2280A9468004FFF37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NQ2QT4C3B;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pradeep.DIYTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DIY.app/DIY";
+			};
+			name = Release;
+		};
 		CC50D525280936E100863885 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -443,6 +565,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CC343DA3280A9468004FFF37 /* Build configuration list for PBXNativeTarget "DIYTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC343DA1280A9468004FFF37 /* Debug */,
+				CC343DA2280A9468004FFF37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CC50D50E280936DF00863885 /* Build configuration list for PBXProject "DIY" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -15,7 +15,8 @@ class DevicesViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        penSwitch.isOn = false
+        bgmSwitch.isOn = false
         // Do any additional setup after loading the view.
     }
     

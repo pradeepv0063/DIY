@@ -17,12 +17,7 @@ class BLEHelper: NSObject {
     var centralManager: CBCentralManager!
     private var state: BLEState = .unauthorised
     
-    static let shared: BLEHelper = {
-        
-        let instance = BLEHelper()
-        
-        return instance
-    }()
+    static let shared: BLEHelper = BLEHelper()
     
     private override init() { }
     

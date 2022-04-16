@@ -56,11 +56,11 @@ extension UserDetailsViewController {
     }
     
     func setUserData() -> UserModel {
-        let model = UserModel(firstName: firstName.text ?? "",
-                              lastName: lastName.text ?? "",
-                              emailId: emailId.text ?? "",
-                              address: address.text ?? "",
-                              pinCode: pinCode.text ?? "")
+        let model = UserModel(firstName: firstName.trimmedText,
+                              lastName: lastName.trimmedText,
+                              emailId: emailId.trimmedText,
+                              address: address.trimmedText,
+                              pinCode: pinCode.trimmedText)
         return model
     }
 }

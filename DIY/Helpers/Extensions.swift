@@ -15,6 +15,10 @@ extension String {
         let isValid = NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: self)
         return isValid
     }
+    
+    var trimmedString: String {
+        self.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
 }
 
 extension UIViewController {
@@ -45,5 +49,24 @@ extension Optional where Wrapped == String {
     
     var isBlank: Bool {
         return self?.isEmpty ?? true
+    }
+    
+    var trimmedString: String {
+        self?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+    }
+    
+    func isCaseInsensitiveEqual(to compareString: String?) -> Bool {
+        guard let self = self, let compareString = compareString else { return false }
+        if self.trimmedString.lowercased() == compareString.trimmedString.lowercased() {
+            return true
+        }
+        return false
+    }
+}
+
+extension Optional where Wrapped == UITextField {
+    
+    var trimmedText: String {
+        self?.text.trimmedString ?? ""
     }
 }

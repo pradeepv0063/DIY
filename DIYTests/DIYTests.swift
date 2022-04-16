@@ -104,6 +104,16 @@ class DIYTests: XCTestCase {
         XCTAssertEqual(values.title, "")
         XCTAssertEqual(values.message, "")
         
+        values = vc.validate(serialNo: "axvbp89", deviceVersion: "2.4.5", deviceName: "alpha")
+        XCTAssertEqual(values.success, true)
+        XCTAssertEqual(values.title, "")
+        XCTAssertEqual(values.message, "")
+        
+        values = vc.validate(serialNo: "axvbp89 ", deviceVersion: " 2.4.5 ", deviceName: "alpha")
+        XCTAssertEqual(values.success, true)
+        XCTAssertEqual(values.title, "")
+        XCTAssertEqual(values.message, "")
+        
         values = vc.validate(serialNo: "AXVBP891", deviceVersion: "2.4.5", deviceName: "Alpha")
         XCTAssertEqual(values.success, false)
         XCTAssertEqual(values.title, "Error")

@@ -50,7 +50,9 @@ extension DataValidationViewController {
     
     func validate(serialNo: String?, deviceVersion: String?, deviceName: String?) -> (success: Bool, title: String, message: String) {
         
-        if serialNo == userModel?.serialNo, deviceVersion == userModel?.deviceVersion, deviceName == userModel?.deviceName {
+        if serialNo.isCaseInsensitiveEqual(to: userModel?.serialNo),
+            deviceVersion.isCaseInsensitiveEqual(to: userModel?.deviceVersion),
+            deviceName.isCaseInsensitiveEqual(to: userModel?.deviceName) {
             return (true, "", "")
         }
         

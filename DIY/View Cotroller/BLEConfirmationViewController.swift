@@ -16,16 +16,15 @@ class BLEConfirmationViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bleHelper.initiate()
-        if userModel?.deviceType == .pen {
-            imageView.image = UIImage(named: "BLE Pen")
-        } else {
-            imageView.image = UIImage(named: "BGM Meter")
-        }
+        imageView.image = UIImage(named: getImageName())
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        let status = isBluetoothOn()
-        return status
+        let values = isBluetoothOn()
+        if !values.success {
+            showAlert(title: values.title, message: values.message)
+        }
+        return values.success
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -34,18 +33,26 @@ class BLEConfirmationViewController: BaseViewController {
     }
 }
 
-private extension BLEConfirmationViewController {
+extension BLEConfirmationViewController {
     
-    func isBluetoothOn() -> Bool {
+    func getImageName() -> String {
+        if userModel?.deviceType == .pen {
+            return "BLE Pen"
+        } else {
+            return "BGM Meter"
+        }
+    }
+    
+    func isBluetoothOn() -> (success: Bool, title: String, message: String) {
 
         let state = bleHelper.getState()
         if state == .poweredOff {
-            showAlert(title: "Alert", message: "Please enable Bluetooth to proceed")
-            return false
+            
+            return (false, "Alert", "Please enable Bluetooth to proceed")
         } else if state == .unauthorised {
-            showAlert(title: "Alert", message: "Please enable Bluetooth in App Settings to proceed")
-            return false
+            
+            return (false, "Alert", "Please enable Bluetooth in App Settings to proceed")
         }
-        return true
+        return (true, "", "")
     }
 }

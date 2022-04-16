@@ -32,10 +32,9 @@ class DateSelectionViewController: BaseViewController, BluetoothNotification {
     }
 }
 
-private extension DateSelectionViewController {
+extension DateSelectionViewController {
     
     func setDate() {
         userModel?.date = datePicker.date.toString()
     }
-    
 }

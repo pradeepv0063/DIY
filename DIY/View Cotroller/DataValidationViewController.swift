@@ -30,8 +30,14 @@ class DataValidationViewController: BaseViewController, BluetoothNotification {
     }
 
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        let status = validate()
-        return status
+        let values = validate()
+        if !values.success {
+            showAlert(title: values.title, message: values.message) {
+                guard let deviceScreen = self.navigationController?.viewControllers[2] else { return }
+                self.navigationController?.popToViewController(deviceScreen, animated: true)
+            }
+        }
+        return values.success
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -40,17 +46,14 @@ class DataValidationViewController: BaseViewController, BluetoothNotification {
     }
 }
 
-private extension DataValidationViewController {
+extension DataValidationViewController {
     
-    func validate() -> Bool {
+    func validate() -> (success: Bool, title: String, message: String) {
         
         if serialNo.text == userModel?.serialNo, deviceVersion.text == userModel?.deviceVersion, deviceName.text == userModel?.deviceName {
-            return true
+            return (true, "", "")
         }
-        showAlert(title: "Error", message: "Entered data did not match") {
-            guard let deviceScreen = self.navigationController?.viewControllers[2] else { return }
-            self.navigationController?.popToViewController(deviceScreen, animated: true)
-        }
-        return false
+        
+        return (false, "Error", "Entered data did not match")
     }
 }

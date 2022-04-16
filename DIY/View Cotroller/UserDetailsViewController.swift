@@ -20,7 +20,11 @@ class UserDetailsViewController: BaseViewController {
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        validateField()
+        let values = validateField()
+        if !values.success {
+            showAlert(title: values.title, message: values.message)
+        }
+        return values.success
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -29,21 +33,21 @@ class UserDetailsViewController: BaseViewController {
     }
 }
 
-private extension UserDetailsViewController {
+extension UserDetailsViewController {
     
-    func validateField() -> Bool {
+    func validateField() -> (success: Bool, title: String, message: String) {
         if firstName.text!.isEmpty ||
             lastName.text!.isEmpty ||
             emailId.text!.isEmpty ||
             address.text!.isEmpty ||
             pinCode.text!.isEmpty {
-            
-            showAlert(title: "Missing Details", message: "Please fill all Text Fields to continue")
-            return false
+
+            return (false, "Missing Details", "Please fill all Text Fields to continue")
         } else if !emailId.text!.isValidEmail {
-            showAlert(title: "Alert", message: "Please enter valid Email Id")
+
+            return (false, "Alert", "Please enter valid Email Id")
         }
-        return true
+        return (true, "", "")
     }
     
     func setUserData() -> UserModel {
